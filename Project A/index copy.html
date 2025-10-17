@@ -1,0 +1,87 @@
+<!-- 
+Template for IMA's Creative Coding Lab 
+
+Project A: Generative Creatures
+CCLaboratories Biodiversity Atlas 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jellioo</title>
+
+    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
+    <meta charset="UTF-8">
+    <!-- link the style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script>
+        // prevent scrolling when spacebar and arrow keys are pressed.
+        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="headline black">Jellio-o</h1>
+    </div>
+
+    <!-- main content -->
+    <div id="main-wrapper">
+        <div id="p5-canvas-container">
+            <!-- This is where your p5 sketch will be appended and appear! -->
+        </div>
+        <div class="two-columns">
+            <div class="left">
+                <h3 class="red">Name of your creature:</h3>
+                <p>Physarum slio</p>
+
+                <h3 class="red">Discovered by / at:</h3>
+                <p>Sydney Zhang - 10, 1, 2025</p>
+
+                <h3 class="green">Family:</h3>
+                <p>The Physaridae family includes soft, jelly-like creatures that live in we slippery environments. They can change color and even their mood through small pulses of light that is reflected on their skin. Members of this family are known for being relatively curious, friendly, and full of personality. It will always be happy to see and greet you!</p>
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>The Physarum Slio's habitat is one that is jelly/ liquid based. It requires this to keep their skin moisterized. This is also why it is hard to find this species of animal.</p>
+
+                <h3 class="green">Appearance:</h3>
+                <p>This slimey friend is one that will stay in a consistent circular shape. However, its eyes will always follow you around. This is due to the curious aspect of their nature. And when you click this friend, it will change colors out of excitment! </p>
+
+                <h3 class="green">Key Characteristics:</h3>
+                <ul>
+                    <li>Observant</li>
+                    <li>Not Shy</li>
+                    <li>Changes Colors</li>
+                </ul>
+            </div>
+        </div>
+        <div class="one-column">
+            <p>
+                <span class="yellow">What we know so far about Physarum Slio</span>
+               Physarum Slios are gentle, curious creatures that love exploring their surroundings. They react to touch by changing colors and bouncing playfully. They need constant moisture to stay healthy and are most active in cool, damp places. Scientists believe their color changes are a form of communication or emotion display.
+                <br>
+              Be gentle and calm around the Physarum Slio. Always keep your hands clean and slightly wet before touching it, since dry contact can harm its skin. Avoid loud noises or sudden movements—they can cause the Slio to retreat or lose color. Never remove it from its moist habitat for too long. Treat it kindly, and it will glow brightly in response!
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="black">
+        <p>A CCLab project made by Sydney Zhang in Fall 2025</p>
+    </div>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="sketch.js" type="text/javascript"> </script>
+</body>
+
+</html>
