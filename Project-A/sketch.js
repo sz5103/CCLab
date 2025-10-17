@@ -68,16 +68,16 @@ function drawSlime() {
   ellipse(slimeX + slimeSize * 0.15 + eyeOffset, slimeY - slimeSize * 0.1, slimeSize * 0.07);
 }
 
-// create several small particles using a simple for loop
+
 function makeParticle(x, y) {
-  for (let i = 0; i < 6; i++) { // makes 6 particles each time
+  for (let i = 0; i < 6; i++) { 
     particleX = x;
     particleY = y;
     particleVX = random(-3, 3);
     particleVY = random(-6, -3);
     particleLife = 100;
 
-    // draw each one slightly offset for a "burst" look
+  
     noStroke();
     fill(120, 220, 120);
     ellipse(particleX + particleVX * 4, particleY + particleVY * 4, 10);
@@ -103,7 +103,7 @@ function mousePressed() {
     ySpeed = -12;
     makeParticle(slimeX, slimeY);
 
-    // change color when clicked
+    
     let r = random(50, 255);
     let g = random(50, 255);
     let b = random(50, 255);
