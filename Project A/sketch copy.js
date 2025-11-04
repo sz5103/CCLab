@@ -1,15 +1,15 @@
-let slimeX, slimeY;
+limeX, slimeY;
 let slimeSize = 180;
 let ySpeed = 0;
 let excited = false;
 
 let slimeColor;
 
-  let canvas = createCanvas(800, 500);
-  canvas.parent("p5-canvas-container");
-  slimeX = width / 2;
-  slimeY = height - slimeSize / 2;
-  slimeColor = color(100, 240, 120);
+let canvas = createCanvas(800, 500);
+canvas.parent("p5-canvas-container");
+slimeX = width / 2;
+slimeY = height - slimeSize / 2;
+slimeColor = color(100, 240, 120);
 
 
 function draw() {
@@ -73,7 +73,7 @@ function drawSlime() {
     ellipse(slimeX, slimeY, slimeSize + i * 8, slimeSize * 0.8 + i * 6);
   }
 
- 
+
   fill(slimeColor);
   noStroke();
   ellipse(slimeX, slimeY, slimeSize, slimeSize * 0.8);
@@ -88,7 +88,7 @@ function drawSlime() {
     }
   }
 
- 
+
   fill(255);
   ellipse(slimeX - slimeSize * 0.15, slimeY - slimeSize * 0.1, slimeSize * 0.15);
   ellipse(slimeX + slimeSize * 0.15, slimeY - slimeSize * 0.1, slimeSize * 0.15);
@@ -115,7 +115,7 @@ function mousePressed() {
   if (d < slimeSize / 2) {
     ySpeed = -12;
 
- 
+
     let r = random(50, 255);
     let g = random(50, 255);
     let b = random(50, 255);
