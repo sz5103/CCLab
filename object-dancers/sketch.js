@@ -19,12 +19,12 @@ let dancer;
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
-  // Only parent if the container div exists (prevents errors)
+
   if (document.getElementById("p5-canvas-container")) {
     canvas.parent("p5-canvas-container");
   }
 
-  // Use your dancer class name here:
+
   dancer = new sydneyDancer(width / 2, height / 2);
 }
 
